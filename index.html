@@ -6,11 +6,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="I am Woman I am Tech: made for you who want a new career">
-    <meta property="og:description" content="Who said you can't learn code? Discover the paths that will lead you to build a successful career and get a new job.">
-    <meta property="og:image" content="https://cristianesimoes.github.io/my-first-landing-page/imagens/foto.jpg">
-    <meta property="og:url" content="https://cristianesimoes.github.io/my-first-landing-page/">
-    <meta property="og:type" content="website">
+    <meta
+      property="og:title"
+      content="I am Woman I am Tech: made for you who want a new career"
+    />
+    <meta
+      property="og:description"
+      content="Who said you can't learn code? Discover the paths that will lead you to build a successful career and get a new job."
+    />
+    <meta
+      property="og:image"
+      content="https://cristianesimoes.github.io/my-first-landing-page/imagens/foto.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://cristianesimoes.github.io/my-first-landing-page/"
+    />
+    <meta property="og:type" content="website" />
     <link rel="icon" href="favicon.ico" />
     <title>I am Woman I am Tech: made for you who want a new career.</title>
     <meta
@@ -18,30 +30,50 @@
       content="Who said you can't learn code? Discover the paths that will lead you to build a successful career and get a new job."
     />
     <meta name="keywords" content="developer, code, html, creativity" />
-    <head>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Merriweather+Sans"
-      />
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-hI5zk5b5l9pKDMNgsI56oH2i8yb1hr3qU//0QHLeejK4lDlj9XvC0gj92KjCFd8bS6F/fv6dKkl1gRY5C5B5Ng==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-       <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-       />
-      </head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Merriweather+Sans"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-hI5zk5b5l9pKDMNgsI56oH2i8yb1hr3qU//0QHLeejK4lDlj9XvC0gj92KjCFd8bS6F/fv6dKkl1gRY5C5B5Ng=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
   <body>
+    <ul class="menu">
+      <li><a class="menuItem" href="#">E-book</a></li>
+      <li><a class="menuItem" href="#">How Start</a></li>
+      <li><a class="menuItem" href="#">About Us</a></li>
+    </ul>
+    <button class="hamburger">
+      <!-- material icons https://material.io/resources/icons/ -->
+      <i class="menuIcon material-icons">menu</i>
+      <i class="closeIcon material-icons" style="display: none">close</i>
+    </button>
     <div class="container">
-      
       <div class="left">
-        <a
-        href="https://www.linkedin.com/in/cristianesimoes//" target="_blank">About Us</a>   
-        <h1 class="animate__animated animate__fadeIn title"><span>Woman</span> your creativity can revolutionize technology
-        </h1> 
+        <a href="https://www.linkedin.com/in/cristianesimoes//" target="_blank"
+          >About Us</a
+        >
+        <h1 class="animate__animated animate__fadeIn title">
+          <span>Woman</span> your creativity can revolutionize technology
+        </h1>
         <p class="paragraph">
           You don't have to be an expert at math or play video games.<br />
           It doesn't matter your age or background. <br />
-          If you want to know how to code websites, applications and solutions as a Developer, it's really
-          possible!<br />
+          If you want to know how to code websites, applications and solutions
+          as a Developer, it's really possible!<br />
           We will send you an e-book with the whole step by step to explain how
           to move from scratch. <br />
           Be your own fairy godmother and leave your name and email here to take
@@ -51,26 +83,42 @@
 
         <form>
           <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname" placeholder="Enter your first name">
-          
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Enter your first name"
+          />
+
           <label for="lname">Last name:</label>
-          <input type="text" id="lname" name="lname" placeholder="Enter your last name">
-          
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Enter your last name"
+          />
+
           <label for="email">Email:</label>
-          <input type="text" id="email" name="email" placeholder="Enter your email address">
-          
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+          />
+
           <button type="submit">Subscribe</button>
         </form>
-                   
-             </div>
-             <div class="right">
-             <img
-             class="image"
-             src="imagens/foto.jpg"
-             alt="A black woman with short hair. She is wearing makeup and there is gliter on the half of you face."
-             width="800"
-            height="800"
-          />
-     
-    </body>
+      </div>
+      <div class="right">
+        <img
+          class="image"
+          src="imagens/foto.jpg"
+          alt="A black woman with short hair. She is wearing makeup and there is gliter on the half of you face."
+          width="800"
+          height="800"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

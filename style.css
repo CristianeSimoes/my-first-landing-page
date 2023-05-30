@@ -13,8 +13,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 0o;
-  margin: 10px;
   padding: 100px;
 }
 .left {
@@ -23,6 +21,68 @@ body {
 }
 .right {
   width: calc(50% - 85px);
+}
+
+// hamburger
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menuItem {
+  display: block;
+  margin: 2rem 4rem;
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+}
+
+.menuItem:hover {
+  text-decoration: underline;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: black solid 1px;
+  background: white;
+  cursor: pointer;
+}
+
+button.hamburger {
+  color: #f20089;
+  background-color: white;
+}
+
+button:hover.hamburger {
+  background-color: #f20089;
+  color: white;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  right: 0;
+  z-index: 99;
+  background: #030839;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+  width: 30%;
+  margin-top: -3px;
+}
+
+.showMenu {
+  transform: translateY(0);
 }
 
 .title {
@@ -115,5 +175,8 @@ input[type="text"]::placeholder {
   }
   .right {
     display: none;
+  }
+  .menu {
+    width: 100%;
   }
 }
